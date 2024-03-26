@@ -4,20 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vue-hello</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
-
+  
     <div id="app">
-
-
-        <h1> {{ introMessage }}   </h1>
-
-
-
+        <h1 v-bind:class="myColorClass"> {{ introMessage }}   </h1>
+        <img v-bind:src="welcomeImage" alt="Welcome-image">
     </div>
-
-    
+ 
     <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
 </html>

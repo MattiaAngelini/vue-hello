@@ -8,7 +8,9 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            introMessage: 'Benvenuto!'           
-        };
+            introMessage: 'Benvenuto!', 
+            myColorClass: 'text-blue',
+            welcomeImage: '/assets/img/welcome.jpeg'                   
+        }
     }
 }).mount('#app');
